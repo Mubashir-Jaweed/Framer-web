@@ -8,6 +8,7 @@ export default function Home() {
         <h1 className="text-[#333] text-5xl text-center pt-40"></h1>
       </div>
       <Hero/>
+      <Hero/>
 
       
       

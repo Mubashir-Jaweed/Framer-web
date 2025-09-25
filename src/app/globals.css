@@ -43,6 +43,10 @@ body {
     font-family: var(--font-unbounded);
 }
 
+.sub-font{
+      font-family: var(--font-geist-sans);
+}
+
 .hero-tilt-text{
   color: black;
   position: relative;
