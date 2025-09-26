@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import mic from '../../assets/hero-txt.png'
+import person from '../../assets/hero-person.png'
 import Button from './ui/Button'
 
 const Hero = () => {
     return (
-        <div className="hero-gradient  h-[120vh] pt-44 flex items-center flex-col gap-5">
+        <div className="  h-[130vh] pt-44 flex items-center flex-col gap-5">
             <span className='main-font text-center leading-20 text-[68px] font-normal [word-spacing:-10px] '>
                 The Best
                 <span className='hero-tilt-text ml-3'>Digital</span>
@@ -18,8 +19,8 @@ const Hero = () => {
                     <br/> exceptional craftsmanship to bring your vision to life.
                 </span>
                 <Button btnText='Get Template'/>
-                <div className='border  w-full h-screen'>
-
+                <div className='hero-gradient flex-1 w-full flex justify-center'>
+                    <Image alt='person' src={person} className='image-gradient h-[680px] w-auto  object-cover [mask-image:linear-gradient(to_top,white,black)] [mask-repeat:no-repeat] [mask-size:100%]' />
                 </div>
         </div>
     )
