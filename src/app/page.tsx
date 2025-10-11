@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Marquee from "./components/ui/Marquee";
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
         <h1 className="text-[#333] text-5xl text-center pt-40">hellwewesda</h1>
       </div>
       <Hero />
-      <div className="marquee">
-        <span>The Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing AgencyThe Best Digital Marketing Agency</span>
-      </div>
+      <Marquee/>
 
 
 
