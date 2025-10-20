@@ -25,18 +25,26 @@ const Hero = () => {
             <div className='hero-gradient relative flex-1 w-full flex justify-center'>
                 <Image alt='person' src={person} className='z-10 image-gradient absolute bottom-4 h-[680px] w-auto  ' />
                 <Marquee customClass='absolute top-[40%]' text="Best Marketing Agency"/>
-                <div className='z-20 absolute left-[190px] -bottom-[7%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[30px] max-w-[370px] p-5'>
+                <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[30px] max-w-[370px] p-5'>
                     <span className='uppercase text-white text-[20px] main-font '>
                         #1 Digital Marketing Agency In Asia
                     </span>
-                    <span className='border-b-[0.5px] border-zinc-800 w-full'></span>
-                    <div className='border flex justify-between gap-2'>
-                        <div className='flex '>
+                    <span className='border-b-[0.5px] border-zinc-700 w-full'></span>
+                    <div className='flex justify-center gap-2 '>
+                        <div className='flex ml-5 '>
                            {[...Array(4)].map((_,i)=>(
-                             <span key={i} className='rounded-full h-[50px] w-[50px] border'>
+                             <span key={i} className='rounded-full -ml-5 h-[55px] w-[55px]'>
                             <Image className='rounded-full w-full h-full'  src={dummy} alt='hello'/>
                             </span>
                            ))}
+                        </div>
+                        <div className='flex flex-col'>
+                            <div className='flex gap-1'>
+                                {[...Array(5)].map((_,i)=>(
+                                    <span className='text-[12px]'>⭐</span>
+                                ))}
+                            </div>
+                            <span className='text-white sub-font font-light' >200+ 5 Star Reviews</span>
                         </div>
                     </div>
                 </div>

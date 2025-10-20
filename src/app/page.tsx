@@ -1,5 +1,4 @@
 import Hero from "./components/Hero";
-import Marquee from "./components/ui/Marquee";
 
 export default function Home() {
   return (
