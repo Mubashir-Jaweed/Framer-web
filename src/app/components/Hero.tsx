@@ -25,7 +25,7 @@ const Hero = () => {
             <div className='hero-gradient relative flex-1 w-full flex justify-center'>
                 <Image alt='person' src={person} className='z-10 image-gradient absolute bottom-4 h-[680px] w-auto  ' />
                 <Marquee customClass='absolute top-[40%]' text="Best Marketing Agency"/>
-                <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[30px] max-w-[370px] p-5'>
+                <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[40px] max-w-[370px] p-5'>
                     <span className='uppercase text-white text-[20px] main-font '>
                         #1 Digital Marketing Agency In Asia
                     </span>
@@ -41,7 +41,7 @@ const Hero = () => {
                         <div className='flex flex-col'>
                             <div className='flex gap-1'>
                                 {[...Array(5)].map((_,i)=>(
-                                    <span className='text-[12px]'>⭐</span>
+                                    <span key={i} className='text-[12px]'>⭐</span>
                                 ))}
                             </div>
                             <span className='text-white sub-font font-light' >200+ 5 Star Reviews</span>
