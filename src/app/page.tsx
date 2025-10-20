@@ -9,7 +9,9 @@ export default function Home() {
         <h1 className="text-[#333] text-5xl text-center pt-40">hellwewesda</h1>
       </div>
       <Hero />
-      <Marquee/>
+      <div className="h-screen">
+
+      </div>
 
 
 

@@ -1,16 +1,23 @@
-import React from "react";
+// components/SimpleMarquee.tsx
+import React from 'react';
 
-const Marquee: React.FC = () => {
+const Marque = ({customClass, text= 'I am Batman'}:{customClass?:string,text?:string}) => {
+  const marqueeContent = (
+    <>
+      <span >{text}</span>
+      <span >{text}</span>
+      <span >{text}</span>
+
+    </>
+  );
+
   return (
-    <div className="w-full overflow-hidden whitespace-nowrap relative">
-      <span className="bg-red-500 text-white p-4 inline-block animate-marquee">
-        The Best Digital Marketing Agency The Best Digital Marketing Agency The
-        Best Digital Marketing Agency The Best Digital Marketing Agency The Best
-        Digital Marketing Agency The Best Digital Marketing Agency The Best
-        Digital Marketing Agency The Best Digital Marketing Agency
-      </span>
+    <div className={`flex w-full overflow-hidden text-zinc-300 ${customClass}`}>
+      <div className="flex gap-14 animate-marquee whitespace-nowrap main-font text-center  text-[95px] font-medium text-white ">
+        {marqueeContent}
+        {marqueeContent} 
+      </div>
     </div>
   );
 };
-
-export default Marquee;
+export default Marque;

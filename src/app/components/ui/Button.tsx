@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Button = ({ btnText,isGap = true }: { btnText: string,isGap?:boolean }) => {
     return (
-        <div className={`border border-[#f58327] rounded-full flex justify-between items-center gap-0 ${isGap ? 'hover:gap-1.5' : 'gap-0'} group transition-all duration-300 ease-in-out`}>
+        <div className={`border border-[#f58327] rounded-full m-2 flex justify-between items-center gap-0 ${isGap ? 'hover:gap-1.5' : 'gap-0'} group transition-all duration-300 ease-in-out`}>
             <span className='main-font text-[13px] leading-[19.5px] uppercase text-black bg-[#f58327] rounded-tl-full rounded-bl-full py-3.5 px-7'>
                 {btnText}
             </span>
