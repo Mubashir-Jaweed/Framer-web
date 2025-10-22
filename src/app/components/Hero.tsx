@@ -17,7 +17,7 @@ const Hero = () => {
                 <span className='bg-[#f58327] rounded-full inline-flex justify-center items-end mx-2 align-top'><Image alt='mic' src={mic} className='h-[75px] w-[75px] object-contain -rotate-12' /></span>
                 Agency.
             </span>
-            <span className='sub-font text-center text-[17px] leading-7 font-light text-zinc-300'>
+            <span className='sub-font text-center text-[17px] leading-7 font-light text-zinc-300 mb-2'>
                 We believe in combining innovative design, sustainable practices, and
                 <br /> exceptional craftsmanship to bring your vision to life.
             </span>
