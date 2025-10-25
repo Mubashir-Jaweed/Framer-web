@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Brands from "./components/Brands";
 import Hero from "./components/Hero";
 import Offer from "./components/Offer";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Offer/>
       <Brands/>
+      <About/>
       <div className="h-screen">
 
       </div>

@@ -65,3 +65,14 @@
   mask-size: 100%;
   filter: brightness(100%) contrast(120%);
 }
+
+.about-bg{
+  background:radial-gradient(circle at center ,#ff7300b2 10%, #4824078c 40%, black),  url('../assets/about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.91;
+  filter: brightness(30%) ;
+  
+}
