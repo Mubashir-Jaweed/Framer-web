@@ -76,3 +76,20 @@
   filter: brightness(30%) ;
   
 }
+
+
+@keyframes appear {
+  from{
+    padding-bottom: 200px;
+  }
+  to{
+    padding-bottom: -200px;
+  }
+}
+
+
+.about-stats-animate{
+  animation: appear linear;
+  animation-timeline: view();
+  /* animation-range:entry 0% cover 40%; */
+}

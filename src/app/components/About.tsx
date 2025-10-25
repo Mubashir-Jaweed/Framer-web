@@ -55,7 +55,7 @@ const About = () => {
             <div className='relative z-10 w-full flex justify-between items-center flex-col h-full p-14'>
                 <div className='flex justify-center items-center'>
                     {stats.map((v, i) => (
-                        <div key={i} className={` ${i % 2 == 1 ? 'pb-20' : ''}`}>
+                        <div key={i} className={` ${i % 2 == 1 ? 'about-stats-animate' : ''}`}>
                             <div className='cursor-pointer h-[190px] w-[190px] bg-white/10 backdrop-blur-sm rounded-full -ml-3 flex flex-col justify-center items-center'>
                                 <span className='main-font text-[40px] font-medium leading-[38px] [word-spacing:-3px] text-white'>{v.title}</span>
                                 <span className='sub-font text-[16px] font-light text-white leading-4'>Successful Projects</span>

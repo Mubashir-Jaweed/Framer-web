@@ -5,7 +5,7 @@ import Offer from "./components/Offer";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto scroll-smooth">
       {/* fixed bg */}
       <div className="fixed ">
         <h1 className="text-[#333] text-5xl text-center pt-40">**********</h1>
