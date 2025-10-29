@@ -1,4 +1,3 @@
-import { div } from 'framer-motion/client'
 import React from 'react'
 import { IoIosAnalytics } from 'react-icons/io'
 import { DiReact } from "react-icons/di";

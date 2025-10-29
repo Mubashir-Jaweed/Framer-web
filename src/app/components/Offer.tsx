@@ -48,7 +48,7 @@ const Offer = () => {
             <div className='flex justify-end items-center gap-5 '>
                 <Button btnText='view all services' isGap={true} />
             </div>
-            {/* row 2 */}
+            {/* row 3 */}
             <div className='grid grid-cols-2 justify-end items-center gap-4'>
                 {data.map((d, i) => (
                     <Link key={i} href={d.link}>

@@ -11,11 +11,16 @@ const config: Config = {
   	extend: {
 	 animation: {
         marquee: 'marquee 50s linear infinite',
+        marqueeY: 'marqueeY 10s linear infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' }, 
+        },
+        marqueeY: {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)' }, 
         },
       },
   		borderRadius: {
