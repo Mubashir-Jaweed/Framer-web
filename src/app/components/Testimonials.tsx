@@ -21,7 +21,7 @@ const Testimonials = () => {
               <div className='w-[80%] mt-16 flex justify-center items-center gap-3'>
                   {[...Array(2)].map((_, i) => (
 
-                      <div className='rounded-[35px] flex flex-col justify-center items-center gap-3.5 w-full bg-[#1f1f1f] p-2.5'>
+                      <div key={i} className='rounded-[35px] flex flex-col justify-center items-center gap-3.5 w-full bg-[#1f1f1f] p-2.5'>
                         <div className='bg-[#0c0c0c] text-white flex justify-center items-center rounded-[38px] h-[370px] w-full'>
                             yt video
                         </div>
