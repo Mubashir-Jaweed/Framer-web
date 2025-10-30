@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 const unbounded = Unbounded({
   variable: "--font-unbounded",
   subsets: ["latin"],
-  weight: ['400', '700'],
+  weight: ['300','400', '700'],
 });
 
 
