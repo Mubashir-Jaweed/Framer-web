@@ -1,9 +1,92 @@
 import React from 'react'
+import { AiOutlineMail } from "react-icons/ai";
+import { LuPhone } from "react-icons/lu";
+import { GrLocation } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+
+import { link } from 'fs';
+import Link from 'next/link';
 
 const Contact = () => {
+
+
+    const menu = [
+        {
+            name: "home",
+            link: '/',
+        },
+        {
+            name: "about",
+            link: '/',
+        },
+        {
+            name: "services",
+            link: '/',
+        },
+        {
+            name: "projects",
+            link: '/',
+        },
+        {
+            name: "blog",
+            link: '/',
+        },
+        {
+            name: "review",
+            link: '/',
+        },
+        {
+            name: "contact",
+            link: '/',
+        },
+    ]
+
+    const services = [
+        {
+            name: "SEO",
+            link: '/',
+        },
+        {
+            name: "Content Marketing",
+            link: '/',
+        },
+        {
+            name: "Website Design",
+            link: '/',
+        },
+        {
+            name: "Social Media Marketing",
+            link: '/',
+        },
+    ]
+
+    const social = [
+        {
+            icon:<FaFacebook className=''/>,
+            link:"/"
+        },
+        {
+            icon:<FaTwitter className=''/>,
+            link:"/"
+        },
+        {
+            icon:<FaLinkedin className=''/>,
+            link:"/"
+        },
+        {
+            icon:<AiFillInstagram className=''/>,
+            link:"/"
+        },
+    ]
+
+
     return (
-        <div className='p-32 w-full flex flex-col justify-center items-center'>
-            <div className='border w-full flex justify-between items-center'>
+        <div className='p-32 w-full flex flex-col justify-center items-center gap-10'>
+            {/* 1 */}
+            <div className=' w-full flex justify-between items-center'>
                 <div>
                     <div className='main-font text-white text-[150px] leading-[105px]'>Let's</div>
                     <div className='main-font text-color text-[150px] leading-[105px]'>Talk!</div>
@@ -26,6 +109,76 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {/* 2 */}
+            <div className='flex flex-col gap-3 w-full'>
+                {/*  */}
+                <div className=' w-full flex justify-between items-start bg-[#33333346] rounded-[30px] p-5'>
+                    {/* 2.1 */}
+                    <div className='flex flex-col justify-center items-center gap-3'>
+                        {/* * */}
+                        <div className='w-[650px] bg-[#33333346] rounded-[32px] py-5 px-7 flex flex-col justify-center items-start gap-3'>
+                            <AiOutlineMail className='text-color size-7' />
+                            <span className='sub-font text-white'>agencee@email.com</span>
+                        </div>
+                        {/* * */}
+                        <div className='w-[650px] bg-[#33333346] rounded-[32px] py-5 px-7 flex flex-col justify-center items-start gap-3'>
+                            <LuPhone className='text-color size-7' />
+                            <span className='sub-font text-white'>+ 54 2541 22 55 66</span>
+                        </div>
+                        {/* * */}
+                        <div className='w-[650px] bg-[#33333346] rounded-[32px] py-5 px-7 flex flex-col justify-center items-start gap-3'>
+                            <GrLocation className='text-color size-7' />
+                            <span className='sub-font text-white'>123 Main Street Anytown, USA, 2141</span>
+                        </div>
+                    </div>
+
+                    {/* 2.2 */}
+                    <div className='flex gap-14'>
+                        <div className='flex flex-col justify-start items-start gap-3 '>
+                            <span className='main-font text-color'>
+                                Menu
+                            </span>
+                            {menu.map((v, i) => (
+                                <Link key={i} href={v.link}>
+                                    <span className='sub-font capitalize hover:underline text-[#d7d7d7]'>
+                                        {v.name}
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                        <div className='flex flex-col justify-start items-start gap-3 '>
+                            <span className='main-font text-color'>
+                                Services
+                            </span>
+                            {services.map((v, i) => (
+                                <Link key={i} href={v.link}>
+                                    <span className='sub-font capitalize hover:underline text-[#d7d7d7]'>
+                                        {v.name}
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+                <div className='w-full bg-[#33333346] rounded-[30px] py-10 flex flex-col justify-center items-center gap-4'>
+                    <span className='text-color main-font'>Follow us:</span>
+                    <div className='flex justify-center items-center gap-3'>
+                        {social.map((v,i)=>(
+                            <Link key={i} href={v.link} className='group'>
+                                <div className='relative rounded-[15px] h-[45px] w-[45px] border-[0.5px] border-[#565656]  flex justify-center items-center'>
+                                    {React.cloneElement(v.icon, { className: 'z-10 size-6 text-white transition-all duration-300 group-hover:text-black group-hover:size-7' })}
+                                    <div className='absolute bg-[#f58327] transition-all duration-700 group-hover:w-full group-hover:h-full  w-0 h-0 rounded-[15px]'>
+
+                                    </div>
+                                </div>
+                                
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
