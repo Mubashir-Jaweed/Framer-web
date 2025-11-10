@@ -1,17 +1,23 @@
+'use client'
 import React from 'react'
 import Button from './Button'
+import { useParams, usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 const Navbar = () => {
 
+  const route = usePathname()
+  console.log(route)
+
 
   const data = [
-    {title:"home",link:"/", isTrue: true},
-    {title:"about",link:"/"},
-    {title:"services",link:"/"},
-    {title:"projects",link:"/"},
-    {title:"reviews",link:"/"},
-    {title:"blog",link:"/"},
-    {title:"contact",link:"/"},
+    {title:"home",link:"/", isTrue: route == '/'},
+    {title:"about",link:"/about", isTrue: route == '/about'},
+    {title:"services",link:"/services", isTrue: route == '/services'},
+    {title:"projects",link:"/case-studies", isTrue: route == '/case-studies'},
+    {title:"reviews",link:"/reviews", isTrue: route == '/reviews'},
+    {title:"blog",link:"/blog", isTrue: route == '/blog'},
+    {title:"contact",link:"/contact-us", isTrue: route == '/contact-us'},
   ]
 
   return (
@@ -23,9 +29,11 @@ Apni-Company
 
         <div className='bg-[#0a0a0a] border border-[#434343] rounded-full p-2 flex justify-center items-center'>
           {data.map((v,i)=>(
-            <div key={i} className={` cursor-pointer main-font text-white uppercase px-5 py-3 rounded-full text-xs duration-500 transition-all hover:scale-90 ${v.isTrue ? 'bg-[#262626] text-color' : 'bg-transparent nav-btn'}`}>
+           <Link key={i} href={v.link}>
+            <div className={` cursor-pointer main-font text-white uppercase px-5 py-3 rounded-full text-xs duration-500 transition-all hover:scale-90 ${v.isTrue ? 'bg-[#262626] text-color' : 'bg-transparent nav-btn'}`}>
               {v.title}
             </div>
+           </Link>
           ))}
         </div>
 
