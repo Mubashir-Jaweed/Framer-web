@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Offer from "./components/Offer";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
+import Navbar from "./components/ui/Navbar";
 import Why from "./components/Why";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <h1 className="text-[#333] text-5xl text-center pt-40">**********</h1>
         <h1 className="text-[#333] text-5xl text-center pt-40">----------</h1>
       </div>
+      <Navbar/>
       <Hero />
       <Offer/>
       <Brands/>

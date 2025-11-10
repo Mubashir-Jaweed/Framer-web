@@ -147,3 +147,25 @@
   background-position: center;
   background-size: cover;
 }
+
+.nav-btn{
+  position: relative;
+}
+.nav-btn::before{
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: #c6c6c611;
+  border-radius: 100px;
+  height: 10px ;
+  width: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover::before{
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(128, 128, 128, 0.121);
+}
