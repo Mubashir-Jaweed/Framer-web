@@ -66,7 +66,7 @@ const About = () => {
                     <div className='w-full flex gap-2.5 justify-center items-center'>
                         {about.map((v, i) => (
                             <div key={i} className='cursor-pointer border border-[#1f1f1f] p-4 w-[480px] glass-bg rounded-[22px] flex flex-col gap-4 justify-center items-center'>
-                                <span className='border border-[#f58327] rounded-[22px] p-2.5 m-1'>
+                                <span className='border border-[#f58327] rounded-[22px] p-2.5 m-1 text-center'>
                                     {v.icon}
                                 </span>
                                 <span className='capitalize text-white text-[20px] main-font '>{v.title}</span>

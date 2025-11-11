@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/ui/Navbar'
 import Hero from './components/Hero'
 import Contact from '../components/Contact'
+import Why from './components/Why'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       </div>
       <Navbar/>
       <Hero/>
+      <Why/>
       <Contact/>
     </div>
   )
