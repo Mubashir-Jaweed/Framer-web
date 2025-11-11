@@ -34,7 +34,7 @@ const Hero = () => {
     ]
 
     return (
-        <div className='w-full  px-32 py-40 text-white flex flex-col gap-28'>
+        <div className='w-full  px-32 pt-40 text-white flex flex-col gap-28'>
             {/* row 1 */}
             <div className='flex justify-center items-center gap-5 '>
                 {/* <div className='bg-[#232323] w-min flex justify-center items-center rounded-full px-3 py-1.5'>

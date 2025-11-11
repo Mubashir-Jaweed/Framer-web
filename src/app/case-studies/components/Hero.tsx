@@ -4,7 +4,7 @@ import portfolio from '../../../assets/case.png'
 
 const Hero = () => {
     return (
-        <div className='w-full  p-32 text-white flex flex-col gap-28'>
+        <div className='w-full  px-32 pt-40 text-white flex flex-col gap-28'>
                 <div>
                     <span className='main-font text-[50px] font-normal leading-[55px] [word-spacing:-3px] [letter-spacing:-2px] text-center flex justify-center items-center'>Check Our Works With <br /> Real Results</span>
                 </div>
