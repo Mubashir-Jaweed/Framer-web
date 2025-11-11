@@ -27,7 +27,7 @@ const CaseStudies = () => {
                                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         />
                                     </div>
-                                    <div className='bg-[#1a1818df] rounded-[35px] p-5 flex flex-col justify-start items-start gap-2 transition-all duration-700 border border-transparent group-hover:border-[#777]'>
+                                    <div className='bg-[#ffffff0d] rounded-[35px] p-5 flex flex-col justify-start items-start gap-2 transition-all duration-700 border border-transparent group-hover:border-[#777]'>
                                         <div className='bg-[#353535] flex justify-center items-center rounded-full px-3 py-1.5'>
                                             <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Case Study</span>
                                         </div>
