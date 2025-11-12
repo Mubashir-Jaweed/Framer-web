@@ -23,7 +23,7 @@ const Hero = () => {
             </span>
             <Button btnText='Get Template' />
             <div className='hero-gradient relative flex-1 w-full flex justify-center'>
-                <Image alt='person' src={person} className='z-10 image-gradient absolute bottom-4 h-[680px] w-auto  ' />
+                {/* <Image alt='person' src={person} className='z-10 image-gradient absolute bottom-4 h-[680px] w-auto  ' /> */}
                 <Marquee customClass='absolute top-[40%]' text="Best Marketing Agency"/>
                 <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[40px] max-w-[370px] p-5'>
                     <span className='uppercase text-white text-[20px] main-font '>

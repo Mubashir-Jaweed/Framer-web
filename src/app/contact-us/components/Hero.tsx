@@ -93,13 +93,13 @@ const Hero = () => {
                 {/* 3.1 */}
                 <div className='h-[460px] flex flex-col justify-start items-start gap-5 rounded-[20px] bg-[#45454546] overflow-hidden col-span-3 '>
                     <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115834.57239450194!2d55.17128!3d25.065697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434c7c7a3f6b%3A0xe5bdfb2b9a95ff12!2sDubai!5e0!3m2!1sen!2sae!4v1700000000000"
-  width="100%"
-  height="100%"
-  allowFullScreen={true}
-  loading="lazy"
-  className=" border-none h-full w-full"
-/>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115834.57239450194!2d55.17128!3d25.065697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434c7c7a3f6b%3A0xe5bdfb2b9a95ff12!2sDubai!5e0!3m2!1sen!2sae!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        allowFullScreen={true}
+                        loading="lazy"
+                        className=" border-none h-full w-full"
+                    />
                 </div>
             </div>
         </div>
