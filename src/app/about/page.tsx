@@ -3,6 +3,8 @@ import Navbar from '../components/ui/Navbar'
 import Hero from './components/Hero'
 import Contact from '../components/Contact'
 import Faq from '../components/Faq'
+import About from './components/About'
+import Brands from './components/Brands'
 
 const page = () => {
   return (
@@ -14,6 +16,8 @@ const page = () => {
       </div>
       <Navbar/>
       <Hero/>
+      <About/>
+      <Brands/>
       <Faq/>
       <Contact/>
 
