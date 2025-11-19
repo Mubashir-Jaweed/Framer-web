@@ -5,6 +5,8 @@ import Contact from '../components/Contact'
 import Faq from '../components/Faq'
 import About from './components/About'
 import Brands from './components/Brands'
+import Values from './components/Values'
+import Gallery from './components/Gallery'
 
 const page = () => {
   return (
@@ -18,6 +20,8 @@ const page = () => {
       <Hero/>
       <About/>
       <Brands/>
+      <Values/>
+      <Gallery/>
       <Faq/>
       <Contact/>
 
