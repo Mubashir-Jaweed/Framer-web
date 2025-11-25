@@ -41,7 +41,7 @@ const MarqueeY = ({ customClass, text = 'I am Batman' }: { customClass?: string,
     const marqueeContent = (
         <>
             {data.map((v, i) => (
-                <div key={i} className='border border-[#777] glass-bg w-[600px] rounded-[20px] p-4'>
+                <div key={i} className='border border-[#777] glass-bg w-full md:w-[600px] rounded-[20px] p-4'>
                     <div className='border-b  border-[#363636] pb-4 flex flex-col justify-center items-start gap-2'>
                         <div className='flex gap-0.5'>
                             {[...Array(5)].map((_, i) => (

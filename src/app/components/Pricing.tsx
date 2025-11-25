@@ -54,7 +54,7 @@ const Pricing = () => {
                 <div className='bg-[#232323] flex justify-center items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Pricing</span>
                 </div>
-                <span className='main-font text-[38px] text-center font-normal leading-[44px] [word-spacing:-3px] text-white'>Profitable Pricing <br /> Plans</span>
+                <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-center text-white'>Profitable Pricing <br className='hidden md:inline' /> Plans</span>
             </div>
 
             <div className='flex flex-col justify-center items-center gap-2'>
@@ -68,7 +68,7 @@ const Pricing = () => {
                 </p>
             </div>
 
-            <div className='w-[90%] flex justify-center items-stretch gap-2'>
+            <div className='w-[100%] lg:w-[90%] flex lg:flex-row flex-col justify-center items-stretch gap-2'>
                 {data.map((v, i) => (
                     <div key={i} className='w-full relative bg-[#292929de] rounded-[25px] p-5 py-7 flex flex-col justify-between items-start '>
                         <div className='flex flex-col justify-start items-start'>

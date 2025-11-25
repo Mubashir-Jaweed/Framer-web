@@ -36,8 +36,8 @@ const Blogs = () => {
                 <div className='bg-[#232323] w-min flex justify-center items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Blogs</span>
                 </div>
-                <div className='w-[35%]'>
-                    <span className='main-font text-[38px] font-normal leading-[44px] [word-spacing:-3px]'>Dive into our collection of engaging blog posts</span>
+                <div className='md:w-[35%] w-full'>
+                    <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-white'>Dive into our collection of engaging blog posts</span>
                 </div>
             </div>
             {/* row 2 */}

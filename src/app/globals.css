@@ -89,11 +89,11 @@
 }
 
 
-.about-stats-animate{
-  animation: appear linear;
-  animation-timeline: view();
-  /* animation-range:entry 0% cover 40%; */
-}
+
+.about-stats-animate {
+    animation: none;
+  }
+
 
 
 @keyframes moveUp1 {
@@ -108,9 +108,7 @@
 }
 
 .case-animate1 {
-  animation: moveUp1 linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 60%;
+  animation: none;
 }
 
 @keyframes moveUp2 {
@@ -125,11 +123,26 @@
 }
 
 .case-animate2 {
-  animation: moveUp2 linear;
+  animation: none;
+}
+@media (min-width: 768px) {
+  .about-stats-animate{
+  animation: appear linear;
+  animation-timeline: view();
+  /* animation-range:entry 0% cover 40%; */
+}
+
+.case-animate1 {
+   animation: moveUp1 linear;
   animation-timeline: view();
   animation-range: entry 0% cover 60%;
 }
-
+.case-animate2{
+animation: moveUp2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+}
 
 .testimonial-bg{
   background: radial-gradient(circle at 50% -50% ,rgba(245, 132, 39, 0.751) 10%,transparent 50%, transparent 100%);
@@ -167,6 +180,30 @@
   height: 100%;
   width: 100%;
   inset: 0;
+  background-color: rgba(128, 128, 128, 0.121);
+}
+
+.sidebar-btn{
+  position: relative;
+}
+.sidebar-btn::before{
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: #c6c6c611;
+  border-radius: 100px;
+  height: 10px ;
+  width: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-btn:hover::before{
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  opacity: 0.1;
   background-color: rgba(128, 128, 128, 0.121);
 }
 

@@ -19,7 +19,7 @@ export default function Home() {
        
       </div>
       <Navbar/>
-      <Hero />
+      {/* <Hero /> */}
       <Offer/>
       <Brands/>
       <About/>
@@ -28,8 +28,8 @@ export default function Home() {
       <Pricing/>
       <Why/>
       <Blogs/>
-      <Faq/> 
-      <Contact/>
+      {/* <Faq/>  */}
+      {/* <Contact/> */}
 
 
 

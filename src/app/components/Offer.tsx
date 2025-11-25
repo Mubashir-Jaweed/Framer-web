@@ -34,22 +34,22 @@ const Offer = () => {
     ]
 
     return (
-        <div className='w-full  p-32 text-white flex flex-col gap-12'>
+        <div className='w-full px-5  sm:px-10 pt-32 lg:p-32 text-white flex flex-col gap-5 md:gap-12'>
             {/* row 1 */}
-            <div className='flex justify-start items-center gap-5 '>
+            <div className='flex justify-start items-center md:items-start flex-col lg:flex-row lg:items-center lg:gap-5 gap-0 '>
                 <div className='bg-[#232323] w-min flex justify-center items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Services</span>
                 </div>
-                <div>
-                    <span className='main-font text-[38px] font-normal leading-[44px] [word-spacing:-3px]'>What we are offering</span>
+                <div className='text-center'>
+                    <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px]'>What we are offering</span>
                 </div>
             </div>
             {/* row 2 */}
-            <div className='flex justify-end items-center gap-5 '>
+            <div className='flex justify-center md:justify-end items-center gap-5 '>
                 <Button btnText='view all services' isGap={true} />
             </div>
             {/* row 3 */}
-            <div className='grid grid-cols-2 justify-end items-center gap-4'>
+            <div className='flex flex-col md:grid grid-cols-2 justify-end items-center gap-4'>
                 {data.map((d, i) => (
                     <Link key={i} href={d.link}>
                         <div className='group bg-[#1f1d1d] rounded-[30px] h-[375px] p-5 flex flex-col justify-between items-start'>
