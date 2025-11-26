@@ -50,15 +50,15 @@ const Faq = () => {
 
 
     return (
-        <div className='w-full p-32 flex justify-center items-center flex-col gap-14'>
+        <div className='w-full px-5  sm:px-10 pt-32 lg:p-32 text-white flex flex-col items-center gap-5 md:gap-14'>
             <div className='flex flex-col justify-center items-center gap-2'>
                 <div className='bg-[#232323] flex justify-center items-center rounded-full px-3 py-1.5'>
-                    <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>frequently asked questions</span>
+                    <span className='sub-font uppercase text-xs font-bold text-color leading-4 text-center'>frequently asked questions</span>
                 </div>
-                <span className='main-font text-[38px] text-center font-normal leading-[44px] [word-spacing:-3px] text-white'>Got Questions? <br/>We've Got Answers!</span>
+                <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-center text-white'>Got Questions? <br className='hidden md:inline-block'/> We've Got Answers!</span>
             </div>
 
-            <div className='flex flex-col w-[70%] gap-5'>
+            <div className='flex flex-col justify-center items-center w-full md:w-[70%] gap-5'>
                 {
                     data.map((v,i)=>(
                         <div key={i} onClick={()=>handleToggle(i)} className={`group bg-[#33333346] hover:bg-[#56565646] transition-all duration-300 backdrop-blur rounded-[30px] px-5 py-6 text-white flex flex-col justify-center items-center ${!isOpen.includes(i) ? 'gap-0' : 'gap-8' }`}>

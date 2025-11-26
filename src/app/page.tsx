@@ -28,7 +28,7 @@ export default function Home() {
       <Pricing/>
       <Why/>
       <Blogs/>
-      {/* <Faq/>  */}
+      <Faq/> 
       {/* <Contact/> */}
 
 
