@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 
 const Faq = () => {
-    const [isOpen, setIsOpen] = useState([])
-
+    const [isOpen, setIsOpen] = useState<number[]>([])
 
     const data = [
         {
