@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 
 const About = () => {
-    const [isOpen, setIsOpen] = useState([])
+const [isOpen, setIsOpen] = useState<number[]>([])
 
     const data =[
          {
