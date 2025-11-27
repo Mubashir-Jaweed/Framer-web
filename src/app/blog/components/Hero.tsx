@@ -46,11 +46,11 @@ const Hero = () => {
   ]
 
   return (
-    <div className='w-full  px-32 pt-40 text-white flex flex-col gap-28'>
-      <div>
-        <span className='main-font text-[50px] font-normal leading-[55px] [word-spacing:-3px] [letter-spacing:-2px] text-center flex justify-center items-center'>Our Exclusive Blogs</span>
+    <div className='w-full px-5  sm:px-10 pt-32 lg:p-32 text-white flex flex-col items-center gap-5 md:gap-28'>
+      <div className='text-center'>
+        <span className='main-font text-[28px] leading-[20px] md:text-[30px] lg:text-[50px] font-normal lg:leading-[44px] [word-spacing:-3px] text-center text-white'>Our Exclusive Blogs</span>
       </div>
-      <div className='w-full grid grid-cols-3 justify-center items-center gap-2'>
+      <div className='w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center items-center gap-2'>
         {data.map((v, i) => (
           <div key={i} className="group transition-all duration-500 relative w-full h-[400px] rounded-[20px] overflow-hidden cursor-pointer">
             <div className="absolute inset-0 z-0">

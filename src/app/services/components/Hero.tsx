@@ -34,14 +34,14 @@ const Hero = () => {
     ]
 
     return (
-        <div className='w-full  px-32 pt-40 text-white flex flex-col gap-28'>
+        <div className='w-full px-5  sm:px-10 pt-32 lg:p-32 text-white flex flex-col items-center gap-5 md:gap-14'>
             {/* row 1 */}
             <div className='flex justify-center items-center gap-5 '>
                 {/* <div className='bg-[#232323] w-min flex justify-center items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Services</span>
                 </div> */}
-                <div>
-                    <span className='main-font text-[50px] font-normal leading-[55px] [word-spacing:-3px] [letter-spacing:-2px] text-center flex justify-center items-center'>Discover <br/>Our Services</span>
+                <div className='text-center'>
+                    <span className='main-font text-[28px] leading-[20px] md:text-[30px] lg:text-[50px] font-normal lg:leading-[44px] [word-spacing:-3px] text-center text-white'>Discover <br/>Our Services</span>
                 </div>
             </div>
             {/* row 2 */}
@@ -49,7 +49,7 @@ const Hero = () => {
                 <Button btnText='view all services' isGap={true} />
             </div> */}
             {/* row 3 */}
-            <div className='grid grid-cols-2 justify-end items-center gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 justify-end items-center gap-4'>
                 {data.map((d, i) => (
                     <Link key={i} href={d.link}>
                         <div className='group bg-[#1f1d1d] rounded-[30px] h-[375px] p-5 flex flex-col justify-between items-start'>

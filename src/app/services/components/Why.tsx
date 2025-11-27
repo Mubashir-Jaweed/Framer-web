@@ -37,15 +37,15 @@ const Why = () => {
     ]
 
     return (
-        <div className='w-full p-14  pb-24 flex flex-col justify-center items-center gap-2'>
+        <div className='w-full p-10 md:p-14  pb-24 flex flex-col justify-center items-center gap-2'>
             <div className='bg-[#232323] flex justify-center items-center rounded-full px-3 py-1.5'>
                 <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>Why Choose Us</span>
             </div>
-            <span className='main-font text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-white text-center'>Why we are your best<br /> choice</span>
+            <span className='main-font text-[28px] leading-[20px] md:text-[30px] lg:text-[38px] font-normal md:leading-[44px] [word-spacing:-3px] text-center text-white'>Why we are your best<br className='hidden lg:inline-block'/> choice</span>
 
-            <div className='grid grid-cols-3 grid-rows-2 gap-2.5 justify-center items-center mt-12'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5 justify-center items-center mt-12'>
                 {[...Array(6)].map((_, i) => (
-                    <div key={i} className='cursor-pointer border border-[#1f1f1f] p-4 w-[480px]  rounded-[22px] flex flex-col gap-4 justify-center items-center'>
+                    <div key={i} className='cursor-pointer border border-[#1f1f1f] p-4  lg:max-w-[480px]  rounded-[22px] flex flex-col gap-4 justify-center items-center'>
                         <span className='border border-[#f58327] rounded-[22px] p-2.5 m-1 glass-bg'>
                             {about[i].icon}
                         </span>
