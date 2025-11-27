@@ -13,7 +13,7 @@ import Why from "./components/Why";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto scroll-smooth">
+    <div className="w-full h-auto bg-[#0a0a0a] scroll-smooth">
       {/* fixed bg */}
       <div className="fixed-bg ">
        
