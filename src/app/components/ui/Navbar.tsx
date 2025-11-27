@@ -26,7 +26,7 @@ const Navbar = () => {
     <div className=' py-3 bg-[#0a0a0a] lg:bg-transparent lg:py-0 backdrop-blur w-full fixed top-0 z-50 flex justify-center items-center'>
       <div className='w-full mx-10 flex justify-between items-center p-2'>
         <div className=' main-font font-bold text-color text-[20px] w-[200px] flex justify-start items-center'>
-          Apni-Company
+          AapKi
         </div>
 
         <div className='hidden bg-[#0a0a0a] border border-[#434343] rounded-full p-2 xl:flex justify-center items-center'>
