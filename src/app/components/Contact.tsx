@@ -88,7 +88,7 @@ const Contact = () => {
             {/* 1 */}
             <div className=' w-full flex flex-col gap-12 xl:flex-row xl:gap-5 justify-between items-center'>
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='main-font text-white text-[120px] sm:text-[200px] md:text-[250px] lg:text-[350px] xl:text-[150px] leading-[90px] sm:leading-[150px] md:leading-[180px] lg:leading-[260px] xl:leading-[105px]'>Let's</div>
+                    <div className='main-font text-white text-[120px] sm:text-[200px] md:text-[250px] lg:text-[350px] xl:text-[150px] leading-[90px] sm:leading-[150px] md:leading-[180px] lg:leading-[260px] xl:leading-[105px]'>Let’s</div>
                     <div className='main-font text-color text-[120px] sm:text-[200px] md:text-[250px] lg:text-[350px] xl:text-[150px] leading-[90px] sm:leading-[150px] md:leading-[180px] lg:leading-[260px] xl:leading-[105px]'>Talk!</div>
                 </div>
                 <div className='bg-[#33333346] rounded-[30px] p-8 flex flex-col justify-center items-center gap-6'>
