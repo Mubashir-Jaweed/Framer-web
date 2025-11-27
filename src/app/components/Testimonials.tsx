@@ -7,13 +7,13 @@ const Testimonials = () => {
         <div className='relative w-full md:my-20 pb-20'>
             <div className='absolute w-full testimonial-bg'>
                 {/* Large screens */}
-                <p className='hidden md:block text-center lg:text-[170px] main-font text-[#434343] uppercase'
-                    style={{ fontSize: '10vw', lineHeight: '1', margin: 0 }}>
+                <p className='hidden md:block text-center text-[11vw] main-font text-[#434343] uppercase'
+                    >
                     Testimonial
                 </p>
 
 
-                <p className='block w-full md:hidden text-center main-font text-[#434343] uppercase text-[75px] sm:text-[100px]'>
+                <p className='block w-full md:hidden text-center main-font text-[#dfdfdf] uppercase text-[15vw]'>
                     Reviews
                 </p>
             </div>

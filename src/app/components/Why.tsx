@@ -3,8 +3,8 @@ const Why = () => {
     return (
         <div className='w-full  md:p-10 lg:p-32 text-white flex flex-col items-center gap-12'>
             {/* row 1 */}
-            <div className='flex justify-start items-center md:items-start flex-col lg:flex-row lg:items-center lg:gap-5 gap-0 '>
-                <div className='bg-[#232323] flex justify-center items-center rounded-full px-3 py-1.5'>
+            <div className='flex w-full justify-start items-center md:items-start flex-col lg:flex-row lg:items-center lg:gap-5 gap-0 '>
+                <div className='bg-[#232323] flex justify-start items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 '>why us</span>
                 </div>
                 <div>
@@ -42,7 +42,7 @@ const Why = () => {
                 </div>
                 {/* 3 */}
                 <div className="md:col-span-6 why-bg rounded-[30px] p-8 h-[450px] flex justify-center items-center">
-                    <div className='glass-bg border-[0.1px] border-zinc-200/40 rounded-full h-[350px] w-[350px]'>
+                    <div className='glass-bg border-[0.1px] border-zinc-200/40 rounded-full  md:h-[350px] h-[280px]  md:w-[350px] w-[280px]'>
 
                     </div>
                 </div>
