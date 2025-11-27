@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
     <div className=' py-3 bg-[#0a0a0a] lg:bg-transparent lg:py-0 backdrop-blur w-full fixed top-0 z-50 flex justify-center items-center'>
       <div className='w-full mx-10 flex justify-between items-center p-2'>
-        <div className=' main-font font-bold text-color text-[20px] w-[200px] flex justify-start items-center'>
+        <div className=' main-font font-bold text-color text-[20px] md:w-[200px] flex justify-start items-center'>
           AapKi
         </div>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className='hidden w-[200px] xl:flex justify-end items-center'>
+        <div className='hidden md:w-[200px] xl:flex justify-end items-center'>
           <Button btnText='Template' isGap={false} />
         </div>
         <div onClick={() => setIsOpen(!isOpen)} className='xl:hidden flex bg-[#212121] rounded-[10px] p-2'>
