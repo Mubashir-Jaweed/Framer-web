@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="md:h-screen h-[750px]  flex justify-end items-center flex-col gap-5">
             <span className='main-font text-center leading-[50px] lg:leading-[75px] text-[40px] md:text-[50px] lg:text-[68px] font-normal [word-spacing:-10px] text-white '>
                 The Best
-                <span className='hero-tilt-text  ml-3'>Digital</span>
+                <span className='hero-tilt-text   ml-3'>Digital</span>
                 <br className='hidden sm:inline-block'/> Marketing
                 <span className='bg-[#f58327] rounded-full inline-flex justify-center items-end mx-2 align-top'><Image alt='mic' src={mic} className='h-[50px] w-[50px] md:h-[75px] md:w-[75px] object-contain -rotate-12' /></span>
                 Agency.

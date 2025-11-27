@@ -44,12 +44,13 @@
 .hero-tilt-text{
   color: black;
   position: relative;
+  z-index: 2;
   
 }
 
 .hero-tilt-text::before{
   content: "";
-  background: #f58327;
+  background-color: #f58327;
   width: 100%;
   height: 50px;
   position: absolute;
