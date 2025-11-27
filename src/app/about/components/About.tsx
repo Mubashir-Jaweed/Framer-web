@@ -20,7 +20,7 @@ const About = () => {
         },
     ]
 
-     const handleToggle = (i: Number) => {
+     const handleToggle = (i: number) => {
         setIsOpen((prev) => {
             return prev.includes(i) ? prev.filter((v) => v != i) : [...prev, i]
         })
@@ -41,7 +41,7 @@ const About = () => {
             <div className='flex flex-col xl:flex-row  justify-center items-center text-center xl:text-start xl:items-start gap-10'>
                 <div className='w-full '>
                     <span className='sub-font text-[20px] md:text-[27px] font-normal text-[#838383]'>
-                        Let's get acquainted! We're not your average digital marketing agency - we're a team of passionate individuals who eat, sleep, and <span className='text-white'>breathe creativity, innovation, and all things digital.</span> At <span className='text-white'>Celestial Solutions,</span> we're on a mission to make your online <span className='text-color'>dreams come true,</span> one pixel at a time! We're a bunch of <span className='text-white'>tech-savvy wizards, design enthusiasts,</span> and <span className='text-white'>social media mavens</span> who believe that digital marketing should be fun, exciting, and downright awesome.
+                        Let’s get acquainted! We’re not your average digital marketing agency - we’re a team of passionate individuals who eat sleep and <span className='text-white'>breathe creativity innovation and all things digital.</span> At <span className='text-white'>Celestial Solutions</span> we’re on a mission to make your online <span className='text-color'>dreams come true</span> one pixel at a time! We’re a bunch of <span className='text-white'>tech-savvy wizards design enthusiasts</span> and <span className='text-white'>social media mavens</span> who believe that digital marketing should be fun exciting and downright awesome
                     </span>
                 </div>
                  <div className='flex flex-col w-full gap-5'>

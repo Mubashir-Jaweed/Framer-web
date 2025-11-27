@@ -42,7 +42,7 @@ const Faq = () => {
     ]
 
 
-    const handleToggle = (i: Number) => {
+    const handleToggle = (i: number) => {
         setIsOpen((prev) => {
             return prev.includes(i) ? prev.filter((v) => v != i) : [...prev, i]
         })
@@ -55,7 +55,7 @@ const Faq = () => {
                 <div className='bg-[#232323] flex justify-center items-center rounded-full px-3 py-1.5'>
                     <span className='sub-font uppercase text-xs font-bold text-color leading-4 text-center'>frequently asked questions</span>
                 </div>
-                <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-center text-white'>Got Questions? <br className='hidden md:inline-block'/> We've Got Answers!</span>
+                <span className='main-font text-[28px] md:text-[30px] lg:text-[38px] font-normal leading-[44px] [word-spacing:-3px] text-center text-white'>Got Questions? <br className='hidden md:inline-block'/> We’ve Got Answers!</span>
             </div>
 
             <div className='flex flex-col justify-center items-center w-full md:w-[70%] gap-5'>

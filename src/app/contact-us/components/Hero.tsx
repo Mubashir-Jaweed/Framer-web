@@ -26,7 +26,7 @@ const Hero = () => {
     return (
         <div className='w-full px-5  lg:px-10 pt-32 xl:p-32 text-white flex flex-col items-center gap-5 md:gap-28'>
             <div>
-                <span className='main-font text-[28px] leading-[20px] md:text-[30px] lg:text-[50px] font-normal lg:leading-[44px] [word-spacing:-3px] text-center text-white'>Let's Work Together</span>
+                <span className='main-font text-[28px] leading-[20px] md:text-[30px] lg:text-[50px] font-normal lg:leading-[44px] [word-spacing:-3px] text-center text-white'>Let’s Work Together</span>
             </div>
             <div className='w-[95%] xl:w-[85%] h-min rounded-[30px] bg-[#33333346] p-5 grid gap-2.5 grid-cols-4 lg:grid-cols-3  '>
                 {/* 1.1 */}
