@@ -9,23 +9,23 @@ import Marquee from './ui/Marquee'
 
 const Hero = () => {
     return (
-        <div className="h-[130vh] pt-44 flex items-center flex-col gap-5">
-            <span className='main-font text-center leading-[75px] text-[68px] font-normal [word-spacing:-10px] text-white '>
+        <div className="md:h-screen h-[750px]  flex justify-end items-center flex-col gap-5">
+            <span className='main-font text-center leading-[50px] lg:leading-[75px] text-[40px] md:text-[50px] lg:text-[68px] font-normal [word-spacing:-10px] text-white '>
                 The Best
-                <span className='hero-tilt-text ml-3'>Digital</span>
-                <br /> Marketing
-                <span className='bg-[#f58327] rounded-full inline-flex justify-center items-end mx-2 align-top'><Image alt='mic' src={mic} className='h-[75px] w-[75px] object-contain -rotate-12' /></span>
+                <span className='hero-tilt-text  ml-3'>Digital</span>
+                <br className='hidden sm:inline-block'/> Marketing
+                <span className='bg-[#f58327] rounded-full inline-flex justify-center items-end mx-2 align-top'><Image alt='mic' src={mic} className='h-[50px] w-[50px] md:h-[75px] md:w-[75px] object-contain -rotate-12' /></span>
                 Agency.
             </span>
-            <span className='sub-font text-center text-[17px] leading-7 font-light text-zinc-300 mb-2'>
-                We believe in combining innovative design, sustainable practices, and
-                <br /> exceptional craftsmanship to bring your vision to life.
+            <span className='sub-font text-center text-[15px] px-4 md:px-0 md:text-[17px] leading-7 font-light text-zinc-300 mb-2'>
+                We believe in combining innovative design sustainable practices and
+                <br className='hidden md:inline-block'/> exceptional craftsmanship to bring your vision to life.
             </span>
             <Button btnText='Get Template' />
-            <div className='hero-gradient relative flex-1 w-full flex justify-center'>
+            <div className='hero-gradient h-[200px] md:h-[400px] relative  w-full flex justify-center'>
                 {/* <Image alt='person' src={person} className='z-10 image-gradient absolute bottom-4 h-[680px] w-auto  ' /> */}
-                <Marquee customClass='absolute top-[40%]' text="Best Marketing Agency"/>
-                <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[40px] max-w-[370px] p-5'>
+                <Marquee customClass='absolute top-[30%]' text="Best Marketing Agency"/>
+                <div className='glass-bg z-20 absolute left-[190px] -bottom-[10%] hidden xl:flex flex-col gap-2 border-[0.5px] leading-[25px] rounded-[40px] max-w-[370px] p-5'>
                     <span className='uppercase text-white text-[20px] main-font '>
                         #1 Digital Marketing Agency In Asia
                     </span>

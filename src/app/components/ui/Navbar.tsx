@@ -29,7 +29,7 @@ const Navbar = () => {
           Apni-Company
         </div>
 
-        <div className='hidden bg-[#0a0a0a] border border-[#434343] rounded-full p-2 lg:flex justify-center items-center'>
+        <div className='hidden bg-[#0a0a0a] border border-[#434343] rounded-full p-2 xl:flex justify-center items-center'>
           {data.map((v, i) => (
             <Link key={i} href={v.link}>
               <div className={` cursor-pointer main-font text-white uppercase px-5 py-3 rounded-full text-xs duration-500 transition-all hover:scale-90 ${v.isTrue ? 'bg-[#262626] text-color' : 'bg-transparent nav-btn'}`}>
@@ -39,10 +39,10 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className='hidden w-[200px] lg:flex justify-end items-center'>
+        <div className='hidden w-[200px] xl:flex justify-end items-center'>
           <Button btnText='Template' isGap={false} />
         </div>
-        <div onClick={() => setIsOpen(!isOpen)} className='lg:hidden md:flex bg-[#212121] rounded-[10px] p-2'>
+        <div onClick={() => setIsOpen(!isOpen)} className='xl:hidden flex bg-[#212121] rounded-[10px] p-2'>
           <svg
             width={26}
             height={26}
@@ -90,7 +90,7 @@ const Navbar = () => {
       </div>
       
     </div>
-    <div className={` ${isOpen ? 'max-h-[700px] h-[600px] min-h-[500px] opacity-100' : 'h-0 opacity-0'} lg:hidden z-40 flex flex-col justify-center items-center pt-24 pb-10 transition-all delay-300 fixed w-full borde bg-[#0a0a0a]`}>
+    <div className={` ${isOpen ? 'max-h-[700px] h-[600px] min-h-[500px] opacity-100' : 'h-0 opacity-0'} xl:hidden z-40 flex flex-col justify-center items-center pt-24 pb-10 transition-all delay-300 fixed w-full borde bg-[#0a0a0a]`}>
           {data.map((v, i) => (
             <Link key={i} href={v.link} className='w-full px-8'>
               <div className={`${isOpen? 'block' : 'hidden'} cursor-pointer main-font text-white uppercase px-5 py-6 rounded-full text-center text-xs duration-500 transition-all hover:scale-90 ${v.isTrue ? ' bg-[#262626] text-color' : 'bg-transparent sidebar-btn'}`}>

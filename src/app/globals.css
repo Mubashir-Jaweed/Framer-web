@@ -51,12 +51,20 @@
   content: "";
   background: #f58327;
   width: 100%;
-  height: 64px;
+  height: 50px;
   position: absolute;
   z-index: -1;
   transform: rotate(2.5deg);
-  top: 10px;
+  top: 0px;
 }
+
+@media (min-width: 768px) {
+  .hero-tilt-text::before{
+    top: 10px;
+    height: 64px;
+  }
+}
+
 
 
 .image-gradient {
